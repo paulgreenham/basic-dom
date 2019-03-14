@@ -1,3 +1,71 @@
+body {
+    background-color: lightskyblue;
+}
+
+
+#container {
+    width: 300px;
+    height: auto;
+    background-color: darkcyan;
+    position: relative;
+    margin-left: 50%;
+    left: -150px;
+    margin-top: 10%;
+    top: -30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px ridge #2980b9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: auto;
+    border: 3px inset #2980b9;
+    position: relative;
+    width: 95%;
+    height: 20px;
+}
+
+.label {
+    font-size: 20px;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+#name {
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+#salary, #birthday, #phone {
+    width: 135px;
+}
+
+#salary {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#button {
+    background-color: slategrey;
+    border-radius: 5px 10px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    right: 10%;
+    top: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkslategray;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+}
+
 .error-message {
-    color: red;
+    color: darkred;
+    font-weight: bold;
 }

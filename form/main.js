@@ -39,6 +39,7 @@ const validate = function(){
         nameError.innerHTML = validatePhone(phone)
         container.appendChild(nameError)
     }
+    else document.getElementById("container").setAttribute("style", "display:none")
 }
 
 const validateName = function(name){
