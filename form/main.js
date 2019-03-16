@@ -50,6 +50,11 @@ const validate = function(){
     }
     if(errorCount == 0){
         document.getElementById("container").setAttribute("style", "display:none")
+        const welcomeMessage = document.createElement("div")
+        welcomeMessage.innerHTML = "Welcome " + name + "!"
+        welcomeMessage.style.color = "black"
+        welcomeMessage.style.fontWeight = "bold"
+        document.body.appendChild(welcomeMessage)
     }
 }
 
