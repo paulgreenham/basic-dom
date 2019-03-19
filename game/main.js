@@ -27,7 +27,7 @@ const moveRight = function(){
 
 const moveDown = function(){
     let position = parseInt(block.style.top) || 0
-    if(position <= 380){
+    if(position <= 350){
         block.style.top = parseInt(position + 15) + "px"
     }
 }
@@ -36,3 +36,20 @@ upArrow.onclick = moveUp
 leftArrow.onclick = moveLeft
 rightArrow.onclick = moveRight
 downArrow.onclick = moveDown
+
+document.body.onkeydown = function(event){
+    let keyInput = event.key
+    if(keyInput == "ArrowUp"){
+        moveUp()
+    }
+    else if(keyInput == "ArrowLeft"){
+        moveLeft()
+    }
+    else if(keyInput == "ArrowRight"){
+        moveRight()
+    }
+    else if(keyInput == "ArrowDown"){
+        moveDown()
+    }
+}
+
